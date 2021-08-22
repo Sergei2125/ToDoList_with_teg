@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 20px;
+  margin: 50px;
+  min-height: 70vh;
+
+  border: 1px solid #bfbfbf;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 10px 10px 5px #c5e3f7;
+}
+.formWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.noteValue {
+  align-content: center;
+  width: 50%;
+
+  &__button {
+    text-align: center;
+    width: inherit;
+  }
+}
