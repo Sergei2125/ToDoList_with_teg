@@ -1,5 +1,4 @@
 import React, { useCallback } from "react";
-import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import ToDoListLayout from "../components/ToDoListLayout";
 
@@ -117,6 +116,5 @@ const ToDoListContainer = (props) => {
     />
   );
 };
-
 
 export default ToDoListContainer;

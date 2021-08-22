@@ -13,10 +13,6 @@ import styles from "./styles.module.scss";
 
 const { v4 } = require("uuid");
 
-const tegButton = {
-  marginLeft: "15px",
-};
-
 const HightLight = ({ str, tegValue }) => {
   if (!tegValue) return str;
 
@@ -37,7 +33,7 @@ const Card = ({ task, handleRemoveTask, handleChangeTask, tegValue }) => {
   return (
     <ListItem className={styles.listItemWrapper}>
       <ListItemIcon>
-        <FolderIcon color="primary" />
+        <FolderIcon color="primary" className={styles.cardItemHide} />
       </ListItemIcon>
       <ListItemText
         className={styles.noteText}
@@ -47,18 +43,18 @@ const Card = ({ task, handleRemoveTask, handleChangeTask, tegValue }) => {
         })}
       />
       <IconButton
-        style={tegButton}
+        className={styles.tegButton}
         aria-label="correct"
         onClick={handleChangeTask}
-        color="secondary"
+        color="primary"
       >
         <CreateIcon />
       </IconButton>
       <IconButton
-        style={tegButton}
+        className={styles.tegButton}
         aria-label="delete"
         onClick={handleRemoveTask}
-        color="primary"
+        color="secondary"
       >
         <DeleteIcon />
       </IconButton>

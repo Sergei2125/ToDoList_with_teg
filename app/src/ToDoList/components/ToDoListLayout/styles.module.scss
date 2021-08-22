@@ -1,14 +1,18 @@
+.container {
+  margin: 0 auto;
+  padding: 50px 50px;
+}
 .wrapper {
   padding: 20px;
-  margin: 50px;
   min-height: 70vh;
 
   border: 1px solid #bfbfbf;
   border-radius: 20px;
   text-align: center;
-  background-color: rgb(238, 238, 238);
-  box-shadow: 10px 10px 5px #c5e3f7;
+  background-color: rgb(216, 243, 253);
+  box-shadow: 10px 10px 5px #92cff7;
 }
+
 .formWrapper {
   display: flex;
   justify-content: space-around;
@@ -20,5 +24,23 @@
   &__button {
     text-align: center;
     width: inherit;
+  }
+}
+.inputButton {
+  margin: 20px !important;
+}
+.tegButton {
+  margin-top: 26px !important;
+}
+@media (max-width: 1029px) {
+  .container {
+    width: 1000;
+    padding: 15px 15px;
+  }
+  .formWrapper {
+    display: block;
+  }
+  .noteValue {
+    width: 100%;
   }
 }

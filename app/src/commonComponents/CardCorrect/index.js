@@ -17,13 +17,9 @@ const CardCorrect = ({
   handleSaveCorrect,
   handleChangeCancel,
 }) => {
-  const tegButton = {
-    marginLeft: "15px",
-  };
-
   return (
     <ListItem className={styles.listItemWrapper}>
-      <ListItemIcon>
+      <ListItemIcon className={styles.cardItemHide}>
         <FolderIcon color="primary" />
       </ListItemIcon>
       <ListItemText primary={task} />
@@ -39,7 +35,7 @@ const CardCorrect = ({
         />
       </form>
       <IconButton
-        style={tegButton}
+        className={styles.tegButton}
         aria-label="delete"
         onClick={handleSaveCorrect}
         color="primary"
@@ -47,7 +43,7 @@ const CardCorrect = ({
         <SaveIcon />
       </IconButton>
       <IconButton
-        style={tegButton}
+        className={styles.tegButton}
         aria-label="delete"
         onClick={handleChangeCancel}
         color="secondary"

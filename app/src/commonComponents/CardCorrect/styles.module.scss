@@ -5,3 +5,15 @@
   background-color: rgb(238, 242, 250);
   box-shadow: 3px 3px 2px #ff9c9c;
 }
+.tegButton {
+  margin-left: 15px !important;
+}
+@media (max-width: 1029px) {
+  .listItemWrapper {
+    display: block !important;
+    text-align: center !important;
+  }
+  .cardItemHide {
+    display: none !important;
+  }
+}
