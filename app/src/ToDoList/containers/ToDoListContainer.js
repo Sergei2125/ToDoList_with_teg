@@ -8,29 +8,20 @@ const ToDoListContainer = (props) => {
   const [textValueCorrect, setTextValueCorrect] = useState("");
   const [tegValue, setTegValue] = useState("");
 
-  const handleTegChange = useCallback(
-    (event) => {
-      const { value } = event.target;
-      setTegValue(value);
-    },
-    [tegValue]
-  );
+  const handleTegChange = useCallback((event) => {
+    const { value } = event.target;
+    setTegValue(value);
+  }, []);
 
-  const handleTaskCorrectForm = useCallback(
-    (event) => {
-      const { value } = event.target;
-      setTextValueCorrect(value);
-    },
-    [textValueCorrect]
-  );
+  const handleTaskCorrectForm = useCallback((event) => {
+    const { value } = event.target;
+    setTextValueCorrect(value);
+  }, []);
 
-  const handleTaskCreate = useCallback(
-    (event) => {
-      const { value } = event.target;
-      setTextValue(value);
-    },
-    [textValue]
-  );
+  const handleTaskCreate = useCallback((event) => {
+    const { value } = event.target;
+    setTextValue(value);
+  }, []);
 
   useEffect(() => {
     setTaskList((state) => {

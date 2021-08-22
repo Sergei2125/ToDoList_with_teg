@@ -6,7 +6,6 @@ import CardCorrect from "../../../commonComponents/CardCorrect";
 import { Button, List, TextField, Box } from "@material-ui/core";
 
 import styles from "./styles.module.scss";
-const { v4 } = require("uuid");
 
 const ToDoListLayout = ({
   taskList,
@@ -84,7 +83,7 @@ const ToDoListLayout = ({
                       key={index}
                     />
                   );
-                } else if (true) {
+                } else {
                   return (
                     <Card
                       tegValue={tegValue}
